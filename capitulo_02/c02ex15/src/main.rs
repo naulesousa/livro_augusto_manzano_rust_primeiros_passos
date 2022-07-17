@@ -1,3 +1,4 @@
+#![allow(unused_variables)]
 use std::io;
 use std::io::prelude::*;
 
