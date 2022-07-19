@@ -1,1 +1,0 @@
-/home/blacksmith/manzano_rust_primeiros_passos/capitulo_02/exercicios/exercicio_02/target/debug/exercicio_02: /home/blacksmith/manzano_rust_primeiros_passos/capitulo_02/exercicios/exercicio_02/src/main.rs
