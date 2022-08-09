@@ -26,16 +26,32 @@ fn main() {
     io::stdout().flush().unwrap();
     io::stdin().read_line(&mut d).unwrap();
     let d = d.trim().parse::<i64>().unwrap();
+
+    let is_div_a1: i64 = a % 2;
+    let is_div_a2: i64 = a % 3;
+    let is_div_b1: i64 = b % 2;
+    let is_div_b2: i64 = b % 3;
+    let is_div_c1: i64 = c % 2;
+    let is_div_c2: i64 = c % 3;
+    let is_div_d1: i64 = d % 2;
+    let is_div_d2: i64 = d % 3;
     
-    if let a % 2 = 0 && a % 3 = 0 {
+    if is_div_a1 == 0 && is_div_a2 ==0 {
         println!("{}", a)
     }
-    if let b % 2 = 0 && b % 3 = 0 {
+    
+    if is_div_b1 == 0 && is_div_b2 == 0 {
         println!("{}", b)
     }
-    if let c % 2 = 0 && c % 3 = 0 {
+    
+    if is_div_c1 == 0 && is_div_c2 == 0 {
         println!("{}", c)
     }
+    
+    if is_div_d1 == 0 && is_div_d2 == 0 {
+        println!("{}", d)
+    }
+
     println!();
     print!("Tecle <Enter> para encerrar...");
     io::stdout().flush().unwrap();
