@@ -1,5 +1,6 @@
 use std::io;
 use std::io::prelude::*;
+
 fn main() {
     let mut tabuada = String::new();
     let mut resposta = String::new();
@@ -10,10 +11,11 @@ fn main() {
     let mut resp: char;
 
     resp = 'S';
-    while resp == 'S' || resp == 'S' {
+    while resp == 'S' || resp == 's' {
         print!("Entre o valor da tabuada: ");
         io::stdout().flush().unwrap();
         io::stdin().read_line(&mut tabuada).unwrap();
+        n = tabuada.trim().parse::<u8>().unwrap();
 
         println!();
 
